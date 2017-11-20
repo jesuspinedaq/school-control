@@ -1,0 +1,23 @@
+{
+  "name": "ces",
+  "version": "1.0.0",
+  "description": "Sistema control escolar",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "escolar"
+  ],
+  "author": "Jesus Pineda Q.",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
