@@ -1,13 +1,17 @@
 # school-control
 
-School control in node
+School control
+techonology used:
+
+1. Node
+2. MongoDb
+3. Docker
 
 Used packages:
-express
-mongoose
 
-dev packages:
-nodemon
+1. Express
+2. Mongoose
+3. Nodemon
 
 Todo for project structure:
 
