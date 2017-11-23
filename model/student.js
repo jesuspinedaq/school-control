@@ -7,8 +7,6 @@ var studentSchema = new Schema({
     last_name:{type:String, require: true}
 });
 
-var student = mongoose.model('student', studentSchema);
+//var student = mongoose.model('student', studentSchema);
 
-module.exports={
-    Student:student
-};
+module.exports=mongoose.model('student', studentSchema);;
