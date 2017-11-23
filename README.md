@@ -10,9 +10,9 @@ dev packages:
 nodemon
 
 Todo for project structure:
-Add unit test,
-add integration test,
-add eslint,
-authentication,
-logging
 
+1. Add unit test.
+2. Add integration test.
+3. Add linting.
+4. Authentication.
+5. Logging.
