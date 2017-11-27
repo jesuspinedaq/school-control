@@ -4,9 +4,6 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var config = require('./_config');
 
-//routes
-var index = require('./routes/index');
-var students = require('./routes/students');
 var app = express();
 //mongodb
 mongoose.connect(config.mongoURI[app.settings.env], function(err, res) {
@@ -25,21 +22,13 @@ port = 5001;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-
-
-//app.use('/', index.index);
 app.get('/', function(req, res){
     res.send('hello world');
 });
 
-//student routes
-app.get('/students', students.index);
-app.post('/students', students.create);
-app.get('/students/:id', students.show);
-app.delete('/students/:id', students.delete);
-app.put('/students/:id', students.update);
-
-
+var Student = require('./model/student');
+var studentRouter = require('./routes/students')(Student);
+app.use('/students', studentRouter); 
 
 app.listen(port, function(err){
     console.log('running server in port' + port);
