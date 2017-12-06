@@ -1,22 +1,19 @@
-# This is a example Node.js Express JSON API - CRUD Stickers
+# This is a example Node.js Express JSON API
 
 We'll be using:
-* Postgres for our database
-* knex.js for our database migrations, seeds and queries.
+* MongoDb.
 * express.js for our JSON routes
-* Mocha, Chai and SuperTest to test our routes
+* Mocha, Chai and Sinon to test our routes
 
 * Prerequisites (Mac OS Commands)
   * Latest version of Node.js
-    * brew install node
-  * Postgres
+  * MongoDb
     * brew install postgres
     * brew services start postgres
     * createdb
   * Express Generator
     * npm install -g express-generator
-  * Knex installed globaly
-    * npm install -g knex
+
 
 ## Server Check List
 * [ ] Create a server folder

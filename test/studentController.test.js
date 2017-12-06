@@ -5,7 +5,7 @@ var should = chai.should();
 var sinon = require('sinon');
 
 describe('Student controller test', function(){
-    describe('Getggg', function(){
+    describe('Get', function(){
         it('Shoul return students', function(done){
 
             var err = null;//{message:'somethig'};
